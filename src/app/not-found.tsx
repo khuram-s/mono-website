@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound(){return <section className="page-hero"><div className="shell"><p className="eyebrow">404 / Not found</p><h1 className="display display-small">This page is not part of the route.</h1><p className="lede">The address may have changed, or the link may be incomplete.</p><Link className="button button-primary" style={{marginTop:"2rem"}} href="/">Return home <span className="arrow">→</span></Link></div></section>}
