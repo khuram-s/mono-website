@@ -63,7 +63,19 @@ img { display: block; max-width: 100%; }
 h1, h2, h3, h4, h5, h6 { text-wrap: balance; scroll-margin-top: 6rem; }
 p, li { text-wrap: pretty; }
 ::selection { background: var(--signal); color: var(--white); text-shadow: none; }
-.display::selection { background: transparent; color: var(--signal); }
+:is(h1, h2, h3, .footer-statement)::selection,
+:is(h1, h2, h3, .footer-statement) *::selection {
+  background: transparent;
+  color: var(--signal);
+}
+:is(.section-dark, .site-footer) :is(h1, h2, h3, .footer-statement)::selection,
+:is(.section-dark, .site-footer) :is(h1, h2, h3, .footer-statement) *::selection {
+  color: #7892ff;
+}
+.section-blue :is(h1, h2, h3, .footer-statement)::selection,
+.section-blue :is(h1, h2, h3, .footer-statement) *::selection {
+  color: var(--ink);
+}
 
 .skip-link { position: fixed; z-index: 100; left: 1rem; top: 1rem; padding: .7rem 1rem; background: var(--ink); color: var(--white); transform: translateY(-180%); }
 .skip-link:focus { transform: translateY(0); }
