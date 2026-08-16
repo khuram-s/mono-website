@@ -14,7 +14,7 @@ _Status: production-ready code; external launch inputs pending_
 
 ## Inputs required before production
 
-1. Replace the explicit demo address `hello@monocode.example` with the working production inbox. Current DNS checks show no MX, SPF, DKIM, or DMARC records.
+1. Confirm production delivery for `khuram@monocode.space` after deployment.
 2. Approve only authenticated CRM screenshots that contain no personal, prospect, or commercially sensitive information.
 3. Create the GitHub repository and grant both founders appropriate access.
 4. Create the Vercel project from the GitHub repository, using `website` as the root directory if the wider Mono Code workspace is the repository root.
@@ -23,7 +23,7 @@ _Status: production-ready code; external launch inputs pending_
 ## Google Calendar configuration
 
 - Appointment: 30-minute discovery call
-- Host: Khuram
+- Host: primary calendar owner
 - Conferencing: Google Meet
 - Availability: Tuesday and Thursday 8–10 PM PKT; Saturday 7–10 PM PKT
 - Minimum notice: 24 hours
@@ -31,7 +31,7 @@ _Status: production-ready code; external launch inputs pending_
 - Maximum: 2 discovery calls per day
 - Required fields: first name, last name, email
 - Optional context: request it through a reply to the confirmation rather than a required brief
-- Salman: add manually when his input is relevant
+- Add the second participant manually when their input is relevant
 - Before launch: test timezone conversion, reminders, rescheduling, cancellation, host conflicts, and shared-calendar conflicts
 
 Current booking URL: <https://calendar.app.google/b4sK6vopgYTupQKX6>
@@ -39,7 +39,7 @@ Current booking URL: <https://calendar.app.google/b4sK6vopgYTupQKX6>
 Manual check on August 13, 2026 found configuration differences that must be corrected in Google Calendar:
 
 - The organizer identity is displayed as `MonoCode Labs`; the public company name should be `Mono Code`.
-- The live calendar exposes Monday–Friday daytime slots around 9 AM–4 PM PKT and no Saturday times. Khuram will update availability later; this is intentionally deferred.
+- The live calendar exposes Monday–Friday daytime slots around 9 AM–4 PM PKT and no Saturday times. Availability will be updated later; this is intentionally deferred.
 - The required name and email fields plus optional Contact Info, Company Name, and discussion-context fields are approved for the current booking flow.
 - Google Meet and the 30-minute duration are configured correctly.
 

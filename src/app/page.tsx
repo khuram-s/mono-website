@@ -24,7 +24,6 @@ const faqs = [
   ["Will we own the finished website?", "Ownership, accounts, handover materials, and any continuing support are stated in the project agreement before work begins. We do not hide these details behind the launch."],
   ["Can you help with Google Business Profile?", "For eligible businesses, we can improve profile completeness and consistency. We do not guarantee rankings, and Google retains control of profile eligibility and visibility."],
   ["Do you provide ongoing support?", "Yes. Maintenance and ongoing SEO can be added where they are useful. We will not push a recurring service that does not fit the project."],
-  ["Where is Mono Code based?", "We are a small, remote-first agency founded in Lahore, Pakistan, working with businesses internationally."],
 ] as const;
 
 export default function Home() {
@@ -52,7 +51,7 @@ export default function Home() {
 
     <section className="section section-white"><div className="shell">
       <div className="section-head"><p className="eyebrow">Founder-built proof</p><h2 className="title">A working product, built from an idea and shipped live.</h2></div>
-      <div className="work-feature"><div className="work-copy"><div><span className="pill">Founder project · Not client work</span><h3 className="title" style={{marginTop:"1.5rem"}}>LinkedIn Outreach CRM</h3><p className="body-copy">Khuram built and deployed a working SaaS CRM for organizing LinkedIn outreach. It is a direct demonstration of product thinking, interface work, and the ability to take a digital project from concept to a live application.</p></div><Link className="text-link" href="/work/linkedin-outreach-crm">Read the case study <span className="arrow">→</span></Link></div><div className="work-visual"><ProductFrame /></div></div>
+      <div className="work-feature"><div className="work-copy"><div><span className="pill">Founder project · Not client work</span><h3 className="title" style={{marginTop:"1.5rem"}}>LinkedIn Outreach CRM</h3><p className="body-copy">Mono Code built and deployed a working SaaS CRM for organizing LinkedIn outreach. It is a direct demonstration of product thinking, interface work, and the ability to take a digital project from concept to a live application.</p></div><Link className="text-link" href="/work/linkedin-outreach-crm">Read the case study <span className="arrow">→</span></Link></div><div className="work-visual"><ProductFrame /></div></div>
     </div></section>
 
     <section className="section"><div className="shell">

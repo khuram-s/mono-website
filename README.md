@@ -32,7 +32,7 @@ Run `npm run dev` for local development and `npm run build` for a production bui
 ## Launch dependencies
 
 - Final Google Calendar booking URL
-- Verified `hello@monocode.space` inbox
+- Verified `khuram@monocode.space` inbox
 - Approved founder portraits
 - Approved authenticated CRM screenshots, if they are added
 - GitHub repository, Vercel project, and `monocode.space` DNS connection

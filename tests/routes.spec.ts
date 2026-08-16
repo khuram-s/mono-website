@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-const routes = ["/", "/services", "/work", "/work/linkedin-outreach-crm", "/about", "/start-a-project", "/privacy", "/terms"];
+const routes = ["/", "/services", "/work", "/work/linkedin-outreach-crm", "/work/bookkeeping-digital-foundation-concept", "/about", "/start-a-project", "/privacy", "/terms"];
 
 for (const route of routes) {
   test(`${route} renders with one primary heading`, async ({ page }) => {
@@ -25,14 +25,21 @@ test("CRM case study exposes a safe external demo link", async ({ page }) => {
   await expect(link).toHaveAttribute("target", "_blank");
 });
 
+test("bookkeeping concept is explicitly labelled as fictional work", async ({ page }) => {
+  await page.goto("/work/bookkeeping-digital-foundation-concept");
+  await expect(page.getByText(/fictional example/i).first()).toBeVisible();
+  await expect(page.getByText(/not client work/i).first()).toBeVisible();
+  await expect(page.getByText(/cannot demonstrate client results/i)).toBeVisible();
+});
+
 test("legal links are present in the footer", async ({ page }) => {
   await page.goto("/");
   await expect(page.getByRole("link", { name: "Privacy" })).toHaveAttribute("href", "/privacy");
   await expect(page.getByRole("link", { name: "Terms" })).toHaveAttribute("href", "/terms");
 });
 
-test("start page uses the approved calendar and explicit demo inbox", async ({ page }) => {
+test("start page uses the approved calendar and verified contact inbox", async ({ page }) => {
   await page.goto("/start-a-project");
   await expect(page.getByRole("link", { name: /open booking calendar/i })).toHaveAttribute("href", "https://calendar.app.google/b4sK6vopgYTupQKX6");
-  await expect(page.getByRole("link", { name: "hello@monocode.example" }).first()).toHaveAttribute("href", "mailto:hello@monocode.example");
+  await expect(page.getByRole("link", { name: "khuram@monocode.space" }).first()).toHaveAttribute("href", "mailto:khuram@monocode.space");
 });
