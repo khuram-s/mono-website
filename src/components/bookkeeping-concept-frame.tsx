@@ -1,6 +1,6 @@
 export function BookkeepingConceptFrame() {
   return (
-    <div className="bookkeeping-frame" role="img" aria-label="Fictional bookkeeping website concept showing clear services, trust information, and a contact action">
+    <div className="bookkeeping-frame" role="img" aria-label="Northline Bookkeeping responsive homepage direction designed and built by Mono Code">
       <div className="bookkeeping-frame-top">
         <span className="bookkeeping-mark">N/B</span>
         <span>Services</span>
@@ -11,7 +11,7 @@ export function BookkeepingConceptFrame() {
         <div className="bookkeeping-frame-copy">
           <span className="bookkeeping-kicker">Books kept current. Decisions made clearer.</span>
           <span className="bookkeeping-headline">Monthly bookkeeping for local owners who need the numbers to stay useful.</span>
-          <span className="bookkeeping-subcopy">A fictional homepage direction built around service clarity, steady trust, and one obvious next step.</span>
+          <span className="bookkeeping-subcopy">A responsive homepage direction built around service clarity, steady trust, and one obvious next step.</span>
           <span className="bookkeeping-action">See if we fit →</span>
         </div>
         <div className="bookkeeping-ledger" aria-hidden="true">
@@ -24,8 +24,8 @@ export function BookkeepingConceptFrame() {
         </div>
       </div>
       <div className="bookkeeping-frame-foot">
-        <span>Fictional concept</span>
-        <span>No client or performance claim</span>
+        <span>Independent project</span>
+        <span>Strategy · Design · Responsive front-end</span>
       </div>
     </div>
   );

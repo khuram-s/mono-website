@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-const routes = ["/", "/services", "/work", "/work/linkedin-outreach-crm", "/work/bookkeeping-digital-foundation-concept", "/about", "/start-a-project", "/privacy", "/terms"];
+const routes = ["/", "/services", "/work", "/work/bookkeeping-digital-foundation-concept", "/about", "/start-a-project", "/privacy", "/terms"];
 
 for (const route of routes) {
   test(`${route} renders with one primary heading`, async ({ page }) => {
@@ -18,18 +18,20 @@ test("primary journey reaches the start page", async ({ page }) => {
   await expect(page.getByRole("heading", { name: /useful first conversation/i })).toBeVisible();
 });
 
-test("CRM case study exposes a safe external demo link", async ({ page }) => {
-  await page.goto("/work/linkedin-outreach-crm");
-  const link = page.getByRole("link", { name: /open the live login/i });
-  await expect(link).toHaveAttribute("href", "https://linked-in-outreach-crm-mvp-lac.vercel.app/login");
-  await expect(link).toHaveAttribute("target", "_blank");
+test("Northline is framed as an independent Mono Code project", async ({ page }) => {
+  for (const route of ["/", "/work", "/work/bookkeeping-digital-foundation-concept"]) {
+    await page.goto(route);
+    await expect(page.getByText(/independent project/i).first()).toBeVisible();
+    await expect(page.getByText(/fictional|not client work|no client/i)).toHaveCount(0);
+  }
+
+  await expect(page.getByText(/strategy, design, and responsive front-end/i).first()).toBeVisible();
+  await expect(page.getByText(/what the work demonstrates/i).first()).toBeVisible();
 });
 
-test("bookkeeping concept is explicitly labelled as fictional work", async ({ page }) => {
-  await page.goto("/work/bookkeeping-digital-foundation-concept");
-  await expect(page.getByText(/fictional example/i).first()).toBeVisible();
-  await expect(page.getByText(/not client work/i).first()).toBeVisible();
-  await expect(page.getByText(/cannot demonstrate client results/i)).toBeVisible();
+test("withdrawn CRM case study remains unavailable", async ({ page }) => {
+  const response = await page.goto("/work/linkedin-outreach-crm");
+  expect(response?.status()).toBe(404);
 });
 
 test("legal links are present in the footer", async ({ page }) => {

@@ -7,7 +7,7 @@ _Status: production-ready code; external launch inputs pending_
 - All public routes, navigation, footer, 404, privacy, and terms pages
 - Editorial design system, responsive layouts, wordmark, and favicon
 - Find → Trust → Contact motion with reduced-motion support
-- Honest founder-project CRM case study with a direct public-login capture
+- Independent Northline Bookkeeping homepage project
 - Static metadata, canonicals, sitemap, robots, Open Graph image, and defensible structured data
 - Vercel Web Analytics integration, enabled automatically on Vercel
 - Playwright, axe-core, and Lighthouse CI checks
@@ -15,10 +15,9 @@ _Status: production-ready code; external launch inputs pending_
 ## Inputs required before production
 
 1. Confirm production delivery for `khuram@monocode.space` after deployment.
-2. Approve only authenticated CRM screenshots that contain no personal, prospect, or commercially sensitive information.
-3. Create the GitHub repository and grant both founders appropriate access.
-4. Create the Vercel project from the GitHub repository, using `website` as the root directory if the wider Mono Code workspace is the repository root.
-5. Add the production environment variables, connect `monocode.space`, choose apex as canonical, redirect `www`, and verify HTTPS.
+2. Create the GitHub repository and grant both founders appropriate access.
+3. Create the Vercel project from the GitHub repository, using `website` as the root directory if the wider Mono Code workspace is the repository root.
+4. Add the production environment variables, connect `monocode.space`, choose apex as canonical, redirect `www`, and verify HTTPS.
 
 ## Google Calendar configuration
 
