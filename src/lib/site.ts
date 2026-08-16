@@ -2,7 +2,6 @@ export const SITE_NAME = "Mono Code";
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://monocode.space";
 export const SITE_DESCRIPTION = "Mono Code designs and builds professional websites, local visibility foundations, and clearer enquiry journeys for established local businesses.";
 export const EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "khuram@monocode.space";
-export const CRM_DEMO_URL = "https://linked-in-outreach-crm-mvp-lac.vercel.app/login";
 export const BOOKING_URL = process.env.NEXT_PUBLIC_BOOKING_URL || "https://calendar.app.google/b4sK6vopgYTupQKX6";
 export const navItems = [
   { href: "/services", label: "Services" }, { href: "/work", label: "Work" }, { href: "/about", label: "About" }, { href: "/start-a-project", label: "Start a project" },

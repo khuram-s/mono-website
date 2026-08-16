@@ -2,6 +2,30 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema";
 import { BookkeepingConceptFrame } from "@/components/bookkeeping-concept-frame";
-import { ProductFrame } from "@/components/product-frame";
-export const metadata: Metadata={title:"Work",description:"See Mono Code's founder-built product proof and a clearly labelled bookkeeping digital-foundation concept.",alternates:{canonical:"/work"}};
-export default function WorkPage(){return <><BreadcrumbSchema items={[{name:"Home",path:"/"},{name:"Work",path:"/work"}]}/><section className="page-hero"><div className="shell"><p className="eyebrow">Work</p><h1 className="display display-small">Proof should be specific, honest, and open to inspection.</h1><p className="lede">Mono Code is at the beginning of its client portfolio. The work below separates shipped founder-built capability from transparent concept reasoning instead of borrowing credibility or implying results that do not exist.</p></div></section><section className="section section-white"><div className="shell work-stack"><div className="work-feature"><div className="work-copy"><div><span className="pill">Founder project · Live application</span><h2 className="title" style={{marginTop:"1.5rem"}}>LinkedIn Outreach CRM</h2><p className="body-copy">A working SaaS product created to turn a useful internal idea into a structured, deployed application.</p></div><Link className="button button-primary" href="/work/linkedin-outreach-crm">View the full case study <span className="arrow">→</span></Link></div><div className="work-visual"><ProductFrame/></div></div><div className="work-feature work-feature-concept"><div className="work-copy"><div><span className="pill">Fictional concept · Not client work</span><h2 className="title" style={{marginTop:"1.5rem"}}>Bookkeeping digital foundation</h2><p className="body-copy">A transparent example of how service clarity, credible trust information, local visibility foundations, and one clear contact path can work together.</p></div><Link className="button button-primary" href="/work/bookkeeping-digital-foundation-concept">Explore the concept <span className="arrow">→</span></Link></div><div className="work-visual work-visual-concept"><BookkeepingConceptFrame/></div></div></div></section></>}
+
+export const metadata: Metadata = {
+  title: "Work",
+  description: "Explore Northline Bookkeeping, an independent Mono Code project covering strategy, design, and responsive front-end work.",
+  alternates: { canonical: "/work" },
+};
+
+export default function WorkPage() {
+  return <>
+    <BreadcrumbSchema items={[{name:"Home",path:"/"},{name:"Work",path:"/work"}]}/>
+    <section className="page-hero"><div className="shell">
+      <p className="eyebrow">Work</p>
+      <h1 className="display display-small">Proof should be specific, honest, and open to inspection.</h1>
+      <p className="lede">Northline Bookkeeping is an independent Mono Code project showing how we turn positioning, content structure, visual design, and front-end work into one coherent homepage direction.</p>
+    </div></section>
+    <section className="section section-white"><div className="shell work-stack">
+      <div className="work-feature work-feature-concept">
+        <div className="work-copy"><div>
+          <span className="pill">Independent project</span>
+          <h2 className="title" style={{marginTop:"1.5rem"}}>Northline Bookkeeping</h2>
+          <p className="body-copy">Strategy, design, and responsive front-end for a bookkeeping homepage built around service clarity, credible trust information, and a direct enquiry path.</p>
+        </div><Link className="button button-primary" href="/work/bookkeeping-digital-foundation-concept">View the project <span className="arrow">→</span></Link></div>
+        <div className="work-visual work-visual-concept"><BookkeepingConceptFrame/></div>
+      </div>
+    </div></section>
+  </>;
+}

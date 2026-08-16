@@ -1,3 +1,0 @@
-export function ProductFrame() {
-  return <div className="product-frame" role="img" aria-label="Abstracted interface view of the founder-built LinkedIn Outreach CRM"><div className="browser-bar"><span className="browser-dot" /><span className="browser-dot" /><span className="browser-dot" /></div><div className="crm-ui"><div className="crm-sidebar"><span className="crm-line blue" /><span className="crm-line" /><span className="crm-line" /><span className="crm-line" /></div><div className="crm-main"><span className="crm-title" /><div className="crm-stats"><span className="crm-stat" /><span className="crm-stat" /><span className="crm-stat" /></div><span className="crm-table" /></div></div></div>;
-}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ProductFrame } from "@/components/product-frame";
+import { BookkeepingConceptFrame } from "@/components/bookkeeping-concept-frame";
 import { SignalJourney } from "@/components/signal-journey";
 import { addOns, coreServices } from "@/lib/site";
 
@@ -50,8 +50,8 @@ export default function Home() {
     </div></section>
 
     <section className="section section-white"><div className="shell">
-      <div className="section-head"><p className="eyebrow">Founder-built proof</p><h2 className="title">A working product, built from an idea and shipped live.</h2></div>
-      <div className="work-feature"><div className="work-copy"><div><span className="pill">Founder project · Not client work</span><h3 className="title" style={{marginTop:"1.5rem"}}>LinkedIn Outreach CRM</h3><p className="body-copy">Mono Code built and deployed a working SaaS CRM for organizing LinkedIn outreach. It is a direct demonstration of product thinking, interface work, and the ability to take a digital project from concept to a live application.</p></div><Link className="text-link" href="/work/linkedin-outreach-crm">Read the case study <span className="arrow">→</span></Link></div><div className="work-visual"><ProductFrame /></div></div>
+      <div className="section-head"><p className="eyebrow">Independent work</p><h2 className="title">A bookkeeping homepage direction designed and built by Mono Code.</h2></div>
+      <div className="work-feature work-feature-concept"><div className="work-copy"><div><span className="pill">Independent project</span><h3 className="title" style={{marginTop:"1.5rem"}}>Northline Bookkeeping</h3><p className="body-copy">Mono Code defined the positioning, content structure, enquiry path, visual system, and responsive homepage direction.</p></div><Link className="text-link" href="/work/bookkeeping-digital-foundation-concept">View the work <span className="arrow">→</span></Link></div><div className="work-visual work-visual-concept"><BookkeepingConceptFrame /></div></div>
     </div></section>
 
     <section className="section"><div className="shell">
